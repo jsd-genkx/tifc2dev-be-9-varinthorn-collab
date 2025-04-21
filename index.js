@@ -34,7 +34,7 @@ app.get("/books/:id", async (req, res, next) => {
   try {
       const book = await new Promise((resolve, reject) => {
       setTimeout(() => {
-        const foundBook = books.find((b) => b.id === parseInt(req.params.id, 10));
+        const foundBook = books.find((b) => b.id === parseInt(req.params.id, 10)); // 10 คือเลขฐาน 10
         if (foundBook) {
           resolve(foundBook);
         } else {
