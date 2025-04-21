@@ -5,9 +5,12 @@ GET http://localhost:3000/books?genre=Dystopia
 
 ###
 GET http://localhost:3000/books/2
-Content-Type: application/json
 
 ###
-GET http://localhost:3000/books/3
+GET http://localhost:3000/books/999
+
+###
+GET http://localhost:3000/books/unknown
+
 
 
